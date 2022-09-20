@@ -12,10 +12,10 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">หน้าหลัก</a>
+          <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" aria-current="page" href="#">หน้าหลัก</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">ข้อมูลของฉัน</a>
+          <a class="nav-link {{ Request::is('myinfo') ? 'active' : '' }}" href="#">ข้อมูลของฉัน</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">สมัครเข้าศึกษาต่อ</a>

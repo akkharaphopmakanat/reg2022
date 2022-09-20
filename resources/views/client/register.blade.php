@@ -13,7 +13,7 @@
         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
             <div class="col-12 mb-3">
                 <label class="form-label" for="เลขประจำตัวประชาชน">เลขประจำตัวประชาชน : </label>
-                <input class="form-control" id="idcard" name ="idcard" type="text" placeholder="เลขประจำตัวประชาชน" data-sb-validations="required" />
+                <input class="form-control" id="idcard" name ="idcard" type="text" placeholder="16599XXXXXXXX" data-sb-validations="required" />
                 <div class="invalid-feedback" data-sb-feedback="เลขประจำตัวประชาชน:required">เลขประจำตัวประชาชน is required.</div>
             </div>
             <div class="row">
@@ -28,12 +28,12 @@
             </div>
             <div class="col-5 mb-3">
                 <label class="form-label" for="ชื่อ">ชื่อ : </label>
-                <input class="form-control" id="name" name="name" type="text" placeholder="ชื่อ" data-sb-validations="required" />
+                <input class="form-control" id="name" name="name" type="text" placeholder="อานนท์" data-sb-validations="required" />
                 <div class="invalid-feedback" data-sb-feedback="ชื่อ:required">ชื่อ is required.</div>
             </div>
             <div class="col-5 mb-3">
                 <label class="form-label" for="นามสกุล">นามสกุล : </label>
-                <input class="form-control" id="surname" name="surname" type="text" placeholder="นามสกุล" data-sb-validations="required" />
+                <input class="form-control" id="surname" name="surname" type="text" placeholder="มากมี" data-sb-validations="required" />
                 <div class="invalid-feedback" data-sb-feedback="นามสกุล:required">นามสกุล is required.</div>
             </div>
             </div>
@@ -57,12 +57,12 @@
             </div>
             <div class="col-3 mb-3">
                 <label class="form-label" for="หมายเลขโทรศัพท์">หมายเลขโทรศัพท์ : </label>
-                <input class="form-control" id="tel" name="tel" type="text" placeholder="เบอร์โทรศัพท์" data-sb-validations="required" />
+                <input class="form-control" id="tel" name="tel" type="text" placeholder="061XXXXXXX" data-sb-validations="required" />
                 <div class="invalid-feedback" data-sb-feedback="หมายเลขโทรศัพท์:required">เบอร์โทรศัพท์ is required.</div>
             </div>
             <div class="col-5 mb-3">
                 <label class="form-label" for="อีเมล">อีเมล : </label>
-                <input class="form-control" id="email" name="email" type="email" placeholder="อีเมล" data-sb-validations="required,email" />
+                <input class="form-control" id="email" name="email" type="email" placeholder="38332@chs.ac.th" data-sb-validations="required,email" />
                 <div class="invalid-feedback" data-sb-feedback="อีเมล:required">อีเมล is required.</div>
                 <div class="invalid-feedback" data-sb-feedback="อีเมล:email">อีเมล Email is not valid.</div>
             </div>

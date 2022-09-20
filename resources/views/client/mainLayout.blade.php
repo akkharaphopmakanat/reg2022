@@ -1,6 +1,9 @@
 <html>
     <head>
-        <title>App Name - @yield('title')</title>
+        <title>
+        {{ Request::is('/') ? 'หน้าหลัก' : '' }}
+        {{ Request::is('register') ? 'ลงทะเบียน' : '' }}
+        </title>
         @section('stylesheets')
             <link rel="stylesheet" type="text/css" href="style.css"> <!-- this is master stylesheet -->
         @show
