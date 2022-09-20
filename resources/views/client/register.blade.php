@@ -1,7 +1,12 @@
 @extends('client.mainLayout')
 
 @section('content')
-<h2 style="color: #06223a;">สมัครสมาชิก</h2>
+<h2 style="color: #06223a;">ลงทะเบียน</h2>
+@if($errors->any())
+<div class="alert alert-danger" role="alert">
+{{$errors->first()}}
+</div>
+@endif
     <form class="form-horizontal" action="" method="post">
     {{ csrf_field() }}
       <div class="container px-5 my-5">
@@ -51,9 +56,9 @@
                 <div class="invalid-feedback" data-sb-feedback="วันเดือนปีที่เกิด:required">วัน / เดือน / ปีที่เกิด is required.</div>
             </div>
             <div class="col-3 mb-3">
-                <label class="form-label" for="เบอร์โทรศัพท์">เบอร์โทรศัพท์ : </label>
+                <label class="form-label" for="หมายเลขโทรศัพท์">หมายเลขโทรศัพท์ : </label>
                 <input class="form-control" id="tel" name="tel" type="text" placeholder="เบอร์โทรศัพท์" data-sb-validations="required" />
-                <div class="invalid-feedback" data-sb-feedback="เบอร์โทรศัพท์:required">เบอร์โทรศัพท์ is required.</div>
+                <div class="invalid-feedback" data-sb-feedback="หมายเลขโทรศัพท์:required">เบอร์โทรศัพท์ is required.</div>
             </div>
             <div class="col-5 mb-3">
                 <label class="form-label" for="อีเมล">อีเมล : </label>
@@ -64,7 +69,7 @@
             </div>
             <div class="form-group">
               <div style="width:100%;text-align:center;">
-              <button type="submit" class="btn btn-outline-primary">สมัครสมาชิก</button>
+              <button type="submit" class="btn btn-outline-primary">ลงทะเบียน</button>
               </div>
             </div>
         </form>
