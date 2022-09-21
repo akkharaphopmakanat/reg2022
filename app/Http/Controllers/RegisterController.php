@@ -12,8 +12,6 @@ class RegisterController extends Controller
     }
     public function create()
     {
-        #$flights = Student::all();
-        #return $flights;
         return view('client.register');
     }
 

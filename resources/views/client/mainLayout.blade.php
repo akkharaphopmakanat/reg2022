@@ -1,4 +1,5 @@
 <html>
+    <meta http-equiv=Content-Type content="text/html; charset=tis-620">
     <head>
         <title>
         {{ Request::is('/') ? 'หน้าหลัก' : '' }}

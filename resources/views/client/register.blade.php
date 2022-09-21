@@ -1,7 +1,9 @@
 @extends('client.mainLayout')
 
 @section('content')
+<center>
 <h2 style="color: #06223a;">ลงทะเบียน</h2>
+</center>
 @if($errors->any())
 <div class="alert alert-danger" role="alert">
 {{$errors->first()}}

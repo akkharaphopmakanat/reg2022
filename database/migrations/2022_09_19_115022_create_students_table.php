@@ -23,7 +23,7 @@ class CreateStudentsTable extends Migration
             $table->string('gender');
             $table->string('tel');
             $table->string('email');
-            $table->date('birthdate');
+            $table->string('birthdate');
             $table->string('type');
             $table->boolean('activated');
         });
