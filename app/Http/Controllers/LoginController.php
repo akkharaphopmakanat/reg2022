@@ -29,12 +29,14 @@ class LoginController extends Controller
             $password = $student->birthdate;
             $name = $student->name;
             $surname = $student->surname;
+            $acctype = $student->type;
  
             if($password == request()->post('birthdate'))
             {   
                 Session::put('idcard', request()->post('idcard'));
                 Session::put('name', $name);
                 Session::put('surname', $surname);
+                Session::put('acctype', $acctype);
                 return redirect()->to('/');
             }
             else{
