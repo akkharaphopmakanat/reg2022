@@ -45,6 +45,6 @@ class RegisterController extends Controller
         else{
         $user = Student::create(request(['idcard', 'prefix', 'name','surname','gender','birthdate','tel','email']));
         }
-        return redirect()->to('/home');
+        return redirect()->to('/');
     }
 }

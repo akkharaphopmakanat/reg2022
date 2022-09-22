@@ -16,6 +16,11 @@ class LoginController extends Controller
         return view('client.login');
     }
 
+    public function pleaselogin()
+    {
+        return view('client.pleaselogin');
+    }
+
     public function submit(Request $request)
     {
         $request->validate([

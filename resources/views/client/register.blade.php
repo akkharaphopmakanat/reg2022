@@ -1,10 +1,15 @@
 @extends('client.mainLayout')
 
 @section('content')
-<center>
-<h2 style="color: #06223a;">ลงทะเบียน</h2>
-</center>
-@if($errors->any())
+</br>
+<div class="card text-center">
+  <div class="card-header">
+    ลงทะเบียน
+  </div>
+  <div class="card-body">
+
+
+  @if($errors->any())
 <div class="alert alert-danger" role="alert">
 {{$errors->first()}}
 </div>
@@ -53,7 +58,7 @@
                 <div class="invalid-feedback" data-sb-feedback="เพศ:required">One option is required.</div>
             </div>
             <div class="col-2 mb-3">
-                <label class="form-label" for="วันเดือนปีที่เกิด">วัน / เดือน / ปีที่เกิด (ค.ศ.) : </label>
+                <label class="form-label" for="วันเดือนปีที่เกิด">วัน / เดือน / ปีเกิด (ค.ศ.) : </label>
                 <input class="form-control" id="birthdate" name="birthdate" type="date" placeholder="วัน / เดือน / ปีที่เกิด" data-sb-validations="required" />
                 <div class="invalid-feedback" data-sb-feedback="วันเดือนปีที่เกิด:required">วัน / เดือน / ปีที่เกิด is required.</div>
             </div>
@@ -77,4 +82,11 @@
         </form>
     </div>
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+  </div>
+  <div class="card-footer text-muted">
+    2 days ago
+  </div>
+</div>
+
 @stop

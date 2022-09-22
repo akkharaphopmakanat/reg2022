@@ -18,7 +18,7 @@
         @if (session()->has('idcard'))
         @if(Session::get('acctype') <> "เจ้าหน้าที่")
         <li class="nav-item">
-          <a class="nav-link {{ Request::is('myinfo') ? 'active' : '' }}" href="#">ข้อมูลของฉัน</a>
+          <a class="nav-link {{ Request::is('myinfo') ? 'active' : '' }}" href="myinfo">ข้อมูลของฉัน</a>
         </li>
         @endif
         <li class="nav-item">

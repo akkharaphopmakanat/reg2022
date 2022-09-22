@@ -1,10 +1,14 @@
 @extends('client.mainLayout')
 
 @section('content')
-<center>
-<h2 style="color: #06223a;">เข้าสู่ระบบ</h2>
-</center>
-@if($errors->any())
+</br>
+<div class="card text-center">
+  <div class="card-header">
+    เข้าสู่ระบบ
+  </div>
+  <div class="card-body">
+
+  @if($errors->any())
 <div class="alert alert-danger" role="alert">
 {{$errors->first()}}
 </div>
@@ -29,12 +33,20 @@
             </div>
             </center>
             </div>
-            <div class="form-group">
+            <div class="form-group ">
               <div style="width:100%;text-align:center;">
-              <button type="submit" class="btn btn-outline-primary">เข้าสู่ระบบ</button>
-              </div>
+              <button type="submit" class="btn btn-outline-primary ">เข้าสู่ระบบ</button>
             </div>
         </form>
     </div>
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+  </div>
+  <div class="card-footer text-muted">
+    
+  </div>
+</div>
+
+
+
 @stop
